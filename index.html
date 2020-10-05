@@ -183,9 +183,9 @@
 
       function initMap(latitude, longitude) {
         var container = document.getElementById('map');
-        var options = { center: new kakao.maps.LatLng(latitude, longitude), level: 10};
-
-        var map = new kakao.maps.Map(container, options);
+        var mapOption={ center: new kakao.maps.LatLng(latitude, longitude), level: 3,};
+        
+        var map = new kakao.maps.Map(container, mapOption);
         var textWindow = `<div style="padding:5px;">내 위치</div>`;
         var marker = new kakao.maps.Marker({ position: new kakao.maps.LatLng(latitude, longitude) });
         var infoWindow = new kakao.maps.InfoWindow({ content: textWindow, });
