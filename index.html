@@ -211,11 +211,6 @@
         };
 
       navigator.geolocation.getCurrentPosition(success, error, options);
-
-      const watchID = navigator.geolocation.watchPosition((position) => {
-        console.log("성공");
-          initMap(position.coords.latitude, position.coords.longitude);
-        });
     </script>
   </body>
 </html>
